@@ -1,0 +1,43 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Create New PO</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label>Supplier</label>
+        <select name="supplier_id" class="form-control">
+            <option value="">Select Supplier</option>
+            {{#each supplier}}
+            <option value="{{supplier_id}}">{{supplier_name}}</option>
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Product</label>
+        <select name="product_id" class="form-control">
+            <option value="">Select Product</option>
+            {{#each product}}
+            <option value="{{product_id}}">{{product_description}}</option>
+            {{/each}}
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Quantity Ordered</label>
+        <input type="text" class="form-control" name="quantity_ordered">
+    </div>
+    <div class="mb-3">
+        <label>Unit Price</label>
+        <input type="text" class="form-control" name="unit_price">
+    </div>
+    <div class="mb-3">
+        <label>Due Date</label>
+        <input type="text" class="form-control" name="due_date" value="YYYY-MM-DD">
+    </div>
+    <button type="submit" class="btn btn-primary">Create PO</button>
+    <br><br>
+    <a href="/po_app" class="btn btn-info">Cancel</a>
+
+</form>
+{{/block}}
+{{/extends}}
