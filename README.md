@@ -21,5 +21,10 @@ A local MySQL database is deployed
 ![category_schema](mysql/category_schema.png)
 ![po_view_schema](mysql/po_view_schema.png)
 ![product_view_schema](mysql/product_view_schema.png)
+![po_data](mysql/po_data.png)
+![supplier_data](mysql/supplier_data.png)
+![product_data](mysql/product_data.png)
+![category_data](mysql/category_data.png)
+![po_view_data](mysql/po_view_data.png)
+![product_view_data](mysql/product_view_data.png)
 
-Sample data files are in the mysql/ folder.
