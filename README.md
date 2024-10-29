@@ -6,6 +6,10 @@ GitHub link: https://github.com/SamTan20240527/BackEndDevelopment/
 
 # Introduction
 A souvenirs shop needs a purchase order system to keep track of product purchases. As this is just a simple prototype, there is no inventory nor sales order. Also, each PO consists of a single line only. 
+
+# ER Diagram
+![ER Diagram](mysql/er_diagram.png)
+
 # Database
 A local MySQL database is deployed
 - 4 tables: po, supplier, product & category
