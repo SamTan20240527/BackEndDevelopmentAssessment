@@ -1,0 +1,32 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Purchase Order History</h1>
+
+<table class="table">
+    <tr>
+        <th>PO Number</th>
+        <th>Supplier</th>
+        <th>Product</th>
+        <th>Quantity Ordered</th>
+        <th>Unit Price</th>
+        <th>Due Date</th>
+        <th>Quantity Received</th>
+        <th>Remarks</th>
+    </tr>
+    {{#each po}}
+    <tr>
+        <td>{{po_number_view}}</td>
+        <td>{{supplier_name}}</td>
+        <td>{{product_view}}</td>
+        <td>{{quantity_ordered}}</td>
+        <td>{{unit_price}}</td>
+        <td>{{due_date_view}}</td>
+        <td>{{quantity_received}}</td>
+        <td>{{remarks}}</td>
+        
+    </tr>
+    {{/each}}
+</table>
+
+{{/block}}
+{{/extends}}

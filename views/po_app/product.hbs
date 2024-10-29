@@ -1,0 +1,23 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Products</h1>
+
+<table class="table">
+    <tr>
+        <th>Product Number</th>
+        <th>Product Description</th>
+        <th>PO Ordered Quantity</th>
+        <th>PO Received Quantity</th>
+    </tr>
+    {{#each product}}
+    <tr>
+        <td>{{product_number_view}}</td>
+        <td>{{product_description}}</td>
+        <td>{{po_ordered_view}}</td>
+        <td>{{po_received_view}}</td>
+            </tr>
+    {{/each}}
+</table>
+
+{{/block}}
+{{/extends}}

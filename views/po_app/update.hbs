@@ -1,0 +1,22 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Receive PO</h1>
+<div>
+    {{po_id}}{{quantity_ordered}}
+</div>
+<form method="POST">
+        <label>Quantity Received</label>
+        <input type="text" class="form-control" name="quantity_received" value="{{quantity_received}}">
+    </div>
+
+    <div class="mb-3">
+        <label>Remarks</label>
+        <input type="text" class="form-control" name="remarks" value="{{remarks}}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Receive PO</button>
+    <br><br>
+    <a href="/po_app" class="btn btn-info">Cancel</a>
+</form>
+{{/block}}
+{{/extends}}
