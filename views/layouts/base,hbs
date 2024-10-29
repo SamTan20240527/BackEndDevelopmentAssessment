@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="p-2 bg-primary text-white text-left">
+        <h1>Purchase Order System<h1>
+                <h2>Sam's Souvenir Shop</h2>
+    </header>
+    <br>
+    <p>
+        {{!--Display open POs--}}
+        <a href="/po_app" class="btn btn-dark">Open POs</a>
+        {{!--Display PO history--}}
+        <a href="/po_app/po_history" class="btn btn-secondary">PO History</a>
+        {{!--Create PO--}}
+        <a href="/po_app/create" class="btn btn-primary">Create New PO</a>
+        {{!--Display Products--}}
+        <a href="/po_app/product" class="btn btn-info">Products</a>
+    </p>
+
+    <div class="container">
+        {{#block "content"}}{{/block}}
+    </div>
+</body>
+
+</html>
