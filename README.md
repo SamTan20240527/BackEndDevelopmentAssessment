@@ -15,6 +15,7 @@ A local MySQL database is deployed
 - 4 tables: po, supplier, product & category
 - 2 views: po_view & product_view, to present data in a more user-friendly way
 
+(Note: All mysql-related files and images are in the [mysql/] folder)
 ![po_schema](mysql/po_schema.png)
 ![supplier_schema](mysql/supplier_schema.png)
 ![product_schema](mysql/product_schema.png)
@@ -27,4 +28,3 @@ A local MySQL database is deployed
 ![category_data](mysql/category_data.png)
 ![po_view_data](mysql/po_view_data.png)
 ![product_view_data](mysql/product_view_data.png)
-
